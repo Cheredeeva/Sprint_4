@@ -85,7 +85,7 @@ public class MakeOrderTest {
     @Before
     public void setup() {
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
+        options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
         driver = new ChromeDriver(options);
         driver.get("https://qa-scooter.praktikum-services.ru/order");
     }

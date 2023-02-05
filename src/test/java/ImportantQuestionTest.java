@@ -10,9 +10,8 @@ public class ImportantQuestionTest {
 
     @Test
     public void panelDisplaysOnItemClickTest() {
-        System.setProperty("webdriver.chrome.driver","/Users/cheredeeva/WebDriver/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
-        options.addArguments("--no-sandbox");
+        options.addArguments("--no-sandbox", "--headless", "--disable-dev-shm-usage");
         driver = new ChromeDriver(options);
         driver.get("https://qa-scooter.praktikum-services.ru/");
 
