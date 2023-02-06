@@ -69,7 +69,6 @@ public class MakeOrderPageObject {
         new WebDriverWait(driver, 3)
                 .until(ExpectedConditions.elementToBeClickable(nextButton))
                 .click();
-//        driver.findElement(nextButton).click();
     }
 
 }

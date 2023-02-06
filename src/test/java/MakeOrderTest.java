@@ -3,8 +3,6 @@ import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 import poms.MainPageObject;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -50,7 +48,7 @@ public class MakeOrderTest {
         this.comment = comment;
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0} {1} {2} {3} {4} {5} {6} {7} {8} {9}")
     public static Object[] getOrderData() {
         return new Object[][] {
                 {
